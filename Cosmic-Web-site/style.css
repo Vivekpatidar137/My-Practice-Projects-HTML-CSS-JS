@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.header h1 {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  margin-top: 5px;
+}
+
+.header span img {
+  height: 40px;
+}
+
+.navbar {
+
+  background: url('images/space-4984262_1920.jpg');
+  color: white;
+  min-height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+
+input {
+  outline: none;
+  border-radius: 15%;
+  width: 100px;
+  background-color: rgb(255, 255, 255)
+}
+
+button img {
+  width: 13px;
+  height: 13px;
+}
+
+button img:hover {
+
+  width: 16px;
+  height: 16px;
+
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+
+}
+
+li {
+
+  list-style: none;
+}
+
+li a {
+
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-weight: bolder;
+
+
+}
+
+
+.navbar ul li a:hover {
+
+  font-size: larger;
+
+}
+
+.hamburger {
+
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+
+}
+
+
+
+
+@media(max-width:768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+
+    position: absolute;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(27, 25, 25, 0.8);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  li {
+
+    margin: 14px 0;
+  }
+
+  .nav-menu.active {
+
+    left: 0;
+
+  }
+
+}
+
+.intro {
+
+  max-width: 60vw;
+  margin: 1em;
+  margin-bottom: 0.3125em;
+  margin-left: 5em;
+
+}
+
+.intro h2 {
+
+  font-family: 'Titan One', cursive;
+  margin-bottom: 0.3125em;
+}
+
+.intro p {
+
+  font-size: large;
+  letter-spacing: 2px;
+  padding: 2px;
+
+}
+
+.planets-heading {
+
+  font-family: 'Titan One', cursive;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.box {
+
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+.img {
+  width: 80%;
+  max-width: 80%;
+}
+
+.grid-item h2,
+p {
+
+  padding: 20px;
+}
+
+
+.topic {
+  position: relative;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+
+}
+
+.topic img {
+
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.image-caption {
+  position: absolute;
+  top: 0.625vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.625vw;
+  color: black;
+  font-weight: bold;
+}
+
+.image-caption span {
+  font-size: 1.5625vw;
+  font-weight: bolder;
+  border-bottom: 0.125vw solid;
+}
+
+
+.api-container {
+
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 5px;
+
+}
+
+.image-input {
+
+  float: right;
+}
+
+.image-container {
+
+  margin-top: 40px;
+  text-align: center;
+  
+}
+
+.image-container img {
+
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+
+
+.topic_heading {
+
+  font-family: 'Anton', sans-serif;
+  margin: 1.4em;
+  font-weight: lighter;
+
+}
+
+.topic_heading h2 span {
+
+  font-size: larger;
+  font-weight: bolder;
+
+
+
+}
+
+
+.articles {
+
+  text-align: center;
+  padding: 10px;
+  background-color: #dadbf1;
+  margin: 10px;
+
+}
+
+
+
+@media (orientation: landscape) {
+
+  .grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 100vw;
+    margin-top: 20px;
+
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+  .topic_heading {
+
+    font-size: 2rem;
+
+  }
+
+  .article_wrapper {
+
+    display: flex;
+  }
+
+  .articles {
+
+    flex: 1;
+    margin: 20px;
+    padding-top: 25px;
+  }
+
+  .articles:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .intro h2 {
+
+    font-family: 'Titan One', cursive;
+    font-size: 3em;
+
+  }
+
+
+}
+
+
+#more-text {
+  display: none;
+  font-size: small;
+}
+
+
+.footer {
+
+  text-align: center;
+  background: url('images/space-4984262_1920.jpg');
+  color: white;
+  padding: 30px;
+  font-weight: 400;
+
+}
+
+
+
+.footer span a {
+  color: white;
+} 
+
+.visit-more {
+  margin: 5px;
+  }
+
+.visit-more a:hover {
+font-weight: bold;
+color: rgb(117, 211, 180);
+}
