@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/27f9b91fc1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="Media/song.webp" />
+        <h1>Hoshwalon Ko Khabar Kya</h1>
+        <p>Jagjit Singh</p>
+
+        <audio id="songFile">
+          <source
+            src="Media/Hoshwalon Ko Khabar Kya - Ghazal [128 Kbps]-(Pagalworld.gay).mp3"
+          />
+        </audio>
+
+       <div class="playBar">
+        <span id="currentTime">0:00</span>
+        <input type="range" value="0" id="progress" min="0" />
+        <span id="totalTime">0:00</span>
+       </div>
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div class="songButton"><i class="fa-solid fa-play"></i></div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
