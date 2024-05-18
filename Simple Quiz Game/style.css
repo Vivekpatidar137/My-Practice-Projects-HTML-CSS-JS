@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+#quiz {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.option {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#result {
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+#nextButton {
+    display: none;
+    margin: 10px;
+}
+
+.correct-option {
+    background-color: #90EE90; 
+}
+
+.incorrect-option {
+    background-color: #ffcccb;
+}
