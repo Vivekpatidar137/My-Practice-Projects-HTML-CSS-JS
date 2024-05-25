@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canvas</title>
+  
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="color" aria-label="select pen color" value="#ff0000" />
+  <input type="range" min="2" max="50" value="30" aria-label="select pen size" /><span class="output">30</span>
+  <button>Clear canvas</button>
+
+  <canvas class="myCanvas">
+    <p>A man walking.</p>
+  </canvas>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
